@@ -19,9 +19,13 @@ a.active hr{
     font-family: Outfit;
   }
 
+  ::-webkit-scrollbar{
+    display: none;
+  }
   @media (max-width:640px){
     .active{
         background-color: black;
         color: white;
     }
   }
+
