@@ -26,8 +26,6 @@ const SearchBar = () => {
           className='flex-1 outline-none bg-inherit text-sm'
           type='text'
           placeholder='Search'
-          name=''
-          id=''
         />
         <img className='w-4' src={assets.search_icon} alt='' />
       </div>
