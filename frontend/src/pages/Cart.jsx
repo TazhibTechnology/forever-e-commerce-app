@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 import Title from "../components/Title";
-import CartTotal from "../components/Title";
+import CartTotal from "../components/CartTotal";
 import { assets } from "../assets/frontend_assets/assets";
 
 const cart = () => {
@@ -16,7 +16,7 @@ const cart = () => {
         if (cartItems[items][item] > 0) {
           tempData.push({
             _id: items,
-            size: items,
+            size: item,
             quantity: cartItems[items][item],
           });
         }
@@ -56,6 +56,7 @@ const cart = () => {
                     </p>
                     <p className='px-2 sm:px-3 sm:py-1 border hg-slate-50'>
                       {item.size}
+              
                     </p>
                   </div>
                 </div>
